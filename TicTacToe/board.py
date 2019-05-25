@@ -88,7 +88,6 @@ class Board:
         s += "\n   -------------------\n"
         return s
 
-
     def computer_move(self):
         """
         The function that makes computer move
