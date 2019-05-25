@@ -10,10 +10,15 @@ class Game:
         """
         The main game function
         """
+        print("---------------------------------")
+        print('   Welcome to Tic-Tac-Toe Game!')
+        print("---------------------------------")
+        print(self.board)
         while not self.board.has_winner():
             try:
                 try:
-                    begin = input('Enter move: ')
+                    begin = input('Enter coords: ')
+                    begin = ''.join(filter(str.isdigit, begin))
                     a, b = int(begin[0]), int(begin[-1])
                 except:
                     print('You wrote wrong coords')
@@ -29,7 +34,7 @@ class Game:
         if self.board.has_winner() == 1:
             print('You loos')
         elif self.board.has_winner() == -1:
-            print('You won!')
+            print('You win!')
         else:
             print('You draw')
 
