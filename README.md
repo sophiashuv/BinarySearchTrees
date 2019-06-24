@@ -1,4 +1,4 @@
 # BinarySearchTrees
-# task1-2
+#£ task1-2
 
-# Tic-Tac-Toe game
+#£ Tic-Tac-Toe game
